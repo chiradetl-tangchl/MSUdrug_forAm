@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>AMED Auto Loader</title>
+</head>
+<body>
+  <h3>⏳ กำลังโหลดชุดยาอัตโนมัติ...</h3>
+  <script>
+    (function(){
+      try {
+        var s=document.createElement('script');
+        s.src="https://cdn.jsdelivr.net/gh/chiradetl-tangchl/MSUdrug_forAm/data_final.js?cb="+Date.now();
+        document.body.appendChild(s);
+      } catch(e) {
+        alert("❌ Error: " + e.message);
+      }
+    })();
+  </script>
+</body>
+</html>
